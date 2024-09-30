@@ -14,12 +14,16 @@ async def on_ready():
     print(f'Hemos iniciado sesión como {bot.user}')
 
 @bot.command()
-async def Basura_reciclaje(ctx):
-    await ctx.send("la basura reciclaje, ayuda al planeta a no tener tantos recidios y poder reutilizarlos. haciendo bolsas, manualidades o hasta objetos cotidianos")
+async def basura_reciclaje(ctx):
+    await ctx.send("la basura reciclaje♻️, ayuda al planeta a no tener tantos recidios y poder reutilizarlos. haciendo bolsas, manualidades o hasta objetos cotidianos")
 
 @bot.command()
-async def Basura_organica(ctx):
+async def basura_organica(ctx):
     await ctx.send("la basura organica es la basura q proviene de la comida y se deconpone facil porque son plantas, frutas, etc.")
+
+@bot.command()
+async def basura_peligrosa(ctx):
+    await ctx.send("La Basura Peligrosa❌(no es reciclaje), son los residuos hospitalarios o que tenga bacterias, parásitos, virus, hongos e infecciosos")
 
 @bot.command()
 async def imag_basura(ctx):
